@@ -1,0 +1,32 @@
+# CineFlix
+
+CineFlix is a visually appealing and responsive movie platform where users can search and explore various movies with ease.
+
+## Features
+- **Search Functionality**: 
+  - Allows users to search for movies using the search bar.
+  - Responsive to user input with smooth transitions.
+- **Fixed Background**: 
+  - A dynamic background image that stays fixed during scrolling.
+  - Semi-transparent overlay for enhanced readability.
+- **Custom Button Effects**: 
+  - Interactive button with hover effects and smooth transitions.
+- **Responsive Design**: 
+  - Ensures that the site works on all screen sizes (mobile, tablet, desktop).
+- **Glowing Text Effects**: 
+  - Vibrant, glowing text for headers, adding a cinematic feel.
+- **Logo Integration**: 
+  - Custom logo placed strategically within the header.
+
+## How it is made till now:
+- **HTML**: 
+  - Structured the webpage using semantic HTML elements like `header`, `section`, `h1-h4`, `div`, etc.
+- **CSS**: 
+  - Used modern CSS techniques, including flexbox and grid layout, to create a responsive layout.
+  - Implemented custom animations for hover effects on buttons and glowing text.
+  - Integrated background and overlay effects using `background-image` and `rgba` for smooth blending.
+- **Media Queries**: 
+  - Ensured the layout adapts to various screen sizes by using media queries.
+- **JavaScript (Optional)**: 
+  - Added JavaScript to handle any dynamic interactions (if applicable)
+

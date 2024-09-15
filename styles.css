@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-    background-image: url("pxfuel.jpg"); /* Path to your image */
+    background-image: url("background.jpg"); /* Path to your image */
     background-size: cover; /* Cover the entire page */
     background-repeat: no-repeat; /* Prevent image from repeating */
     background-position: center center; /* Center the image */
@@ -62,17 +62,49 @@ header::before {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    left: 630px; /* Adjust position from the left */
-    top: 50%;
+    left: 80px; /* Adjust position from the left */
+    top: 60%;
     transform: translateY(-50%); /* Center vertically */
-    width: 500px; /* Adjust logo size */
-    height: 40px; /* Adjust logo size */
+    width: 600px; /* Adjust logo size */
+    height: 80px; /* Adjust logo size */
     z-index: 1; /* Ensure logo is above other content */
+    
 }
+/* Add multiple logos on the right side */
+header .right-logos {
+    position: absolute;
+    right: 20px; /* Position the container 20px from the right */
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 10px; /* Space between the logos */
+}
+
+/* Style individual logos in the right-logos container */
+header .right-logos .logo {
+    width: 30px; /* Adjust size of each logo */
+    height: 30px; /* Keep logos consistent */
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), /* Glow effect */
+
+}
+
+.logo1 {
+    background-image: url('insta.png'); /* First logo */
+}
+
+.logo2 {
+    background-image: url('linkedin.png'); /* Second logo */
+}
+.logo3 {
+    background-image: url('github.png'); /* Second logo */
+}
+
 
 /* Ensure header content shifts to accommodate the logo */
 h1 {
-    color: rgb(249, 249, 91);
+    color: rgb(255, 255, 255);
     font-size: 60px; /* Smaller, cleaner font size */
     letter-spacing: 1px; /* Slight spacing for elegance */
     font-weight: 600; /* Medium font weight for a sleek, modern look */
@@ -95,6 +127,17 @@ h3 {
     font-weight: 300;
     letter-spacing: 0.5px;
     margin-bottom: 0; 
+}
+h4 {
+    color: #ffffff; /* Bright yellow for visibility */
+    font-size: 35px; /* Adjust size */
+    font-weight: bold; /* Bold for emphasis */
+    text-align: center; /* Center the text */
+    letter-spacing: 2px; /* Add some spacing between letters */
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), /* Glow effect */
+                 0 0 20px rgba(255, 0, 0, 0.5);
+    margin-top: 4px; /* Space above the heading */
+    margin-left: 130px; /* Adjusted based on your earlier mention */
 }
 
 #btn {
@@ -120,14 +163,14 @@ h3 {
     position: absolute;
     display: flex;
     top: 20px;
-    right: 50px;
+    right: 300px;
     justify-content: center;
     align-items: center;
 }
 
 /* Search input */
 #search-bar {
-    width: 300px; /* Width of the search bar */
+    width: 400px; /* Width of the search bar */
     padding: 7px 15px; /* Padding for spacing */
     border: 2px solid rgb(83, 82, 82); /* Light border */
     border-radius: 25px; /* Round corners */
@@ -136,16 +179,40 @@ h3 {
     transition: border-color 0.3s ease; /* Smooth border transition */
     background-color: rgb(27, 27, 27);
     color: aliceblue; /* Text color */
+    
 }
 
 #search-bar:focus {
-    border-color: #888; /* Border color on focus */
+    border-color: #ffffff; /* Border color on focus */
 }
-
+#search-btn
+{
+    background-color: #ffffff00;
+    color: azure;
+    padding:7px 15px;
+    border: 2px solid rgb(83, 82, 82); /* Match the search bar's border */
+    border-radius: 25px; /* Round corners */
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px; /* Space between the search bar and the button */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+#search-btn:hover {
+    background-color: #390202;
+    box-shadow: 0 0 10px rgba(173, 6, 6, 0.6), 0 0 20px rgba(173, 6, 6, 0.5); /* Subtle glowing effect */
+}
+#search-bar:hover {
+    background-color: #390202;
+    box-shadow: 0 0 10px rgba(173, 6, 6, 0.6), 0 0 20px rgba(173, 6, 6, 0.5); /* Subtle glowing effect */
+}
 /* Media query to hide the search bar when the window is smaller than 768px */
 @media (max-width: 768px) {
     .search-container {
         display: none; /* Hide the search bar */
     }
-    .
+    header::before {
+        width: 80px;
+        height: 80px;
+    }
+    
 }
