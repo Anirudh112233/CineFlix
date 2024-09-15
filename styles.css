@@ -1,0 +1,151 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Ensure full height for the entire page */
+    margin: 0;
+}
+
+body {
+    background-image: url("pxfuel.jpg"); /* Path to your image */
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Fix the background during scroll */
+    opacity: 90%;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Black overlay with 80% opacity */
+    z-index: -1; /* Ensures content is above the overlay */
+}
+
+.container {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+        'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+:root {
+    --box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* Style for the header */
+header {
+    background-color: #000000;
+    color: rgb(176, 221, 217);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Add logo before header content */
+header::before {
+    content: '';
+    background-image: url('logo.png'); /* Path to your logo */
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 630px; /* Adjust position from the left */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    width: 500px; /* Adjust logo size */
+    height: 40px; /* Adjust logo size */
+    z-index: 1; /* Ensure logo is above other content */
+}
+
+/* Ensure header content shifts to accommodate the logo */
+h1 {
+    color: rgb(249, 249, 91);
+    font-size: 60px; /* Smaller, cleaner font size */
+    letter-spacing: 1px; /* Slight spacing for elegance */
+    font-weight: 600; /* Medium font weight for a sleek, modern look */
+    margin-left: 70px; /* Space for the logo */
+    margin-bottom: 5px; /* Minimal space between header elements */
+    text-shadow: 0 0 10px rgba(254, 254, 111, 0.31), /* First glow layer */
+                 0 0 20px rgba(254, 254, 111, 0.407), /* Second glow layer */
+                 0 0 30px rgba(254, 254, 111, 0.247); /* Third glow layer */
+}
+
+h2 {
+    color: beige;
+    font-size: 30px; /* Sleeker font size */
+    margin-bottom: 4px;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 18px; 
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin-bottom: 0; 
+}
+
+#btn {
+    padding: 10px 60px;
+    background-color: rgba(173, 6, 6, 0.907); /* Initial background color */
+    color: azure; /* Button text color */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px; /* Optional: Add a subtle border radius */
+    box-shadow: var(--box-shadow); /* Adds a subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+#btn:hover {
+    background-color: #390202; /* Darker background on hover */
+    box-shadow: 0 0 10px rgba(173, 6, 6, 0.6), 0 0 20px rgba(173, 6, 6, 0.5); /* Subtle glowing effect */
+}
+
+.search-container {
+    position: absolute;
+    display: flex;
+    top: 20px;
+    right: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Search input */
+#search-bar {
+    width: 300px; /* Width of the search bar */
+    padding: 7px 15px; /* Padding for spacing */
+    border: 2px solid rgb(83, 82, 82); /* Light border */
+    border-radius: 25px; /* Round corners */
+    font-size: 16px; /* Font size */
+    outline: none; /* Remove outline when focused */
+    transition: border-color 0.3s ease; /* Smooth border transition */
+    background-color: rgb(27, 27, 27);
+    color: aliceblue; /* Text color */
+}
+
+#search-bar:focus {
+    border-color: #888; /* Border color on focus */
+}
+
+/* Media query to hide the search bar when the window is smaller than 768px */
+@media (max-width: 768px) {
+    .search-container {
+        display: none; /* Hide the search bar */
+    }
+    .
+}
